@@ -74,6 +74,7 @@
     "flag",
     "feature toggle",
     "feature flag",
-    "continuous deployment"
+    "continuous deployment",
+    "use hook"
   ]
 }
