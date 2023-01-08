@@ -1,3 +1,14 @@
+## [1.1.1](https://github.com/feijoa-dev/use-feature/compare/v1.1.0...v1.1.1) (2023-01-08)
+
+
+### Bug Fixes
+
+* reverted tokens ([86843c3](https://github.com/feijoa-dev/use-feature/commit/86843c363f82e11fea0f26377968ef06f81c7be8))
+* updated GH token for sem release ([0c57881](https://github.com/feijoa-dev/use-feature/commit/0c57881f8f5bde09f8cc54473a26a1b90170a525))
+* Updated repo link ([1080d6a](https://github.com/feijoa-dev/use-feature/commit/1080d6ae599ae0354d54c34a31e49d7944f9394e))
+* Updated tsconfig ([847155b](https://github.com/feijoa-dev/use-feature/commit/847155bbc510b867993c754a48de63dba37bc6b9))
+* Upgraded node version ([5eed483](https://github.com/feijoa-dev/use-feature/commit/5eed483f67d526d918f0735b66dfc4e6567c91cd))
+
 # [1.1.0](https://github.com/stretch0/use-feature/compare/v1.0.2...v1.1.0) (2023-01-08)
 
 
