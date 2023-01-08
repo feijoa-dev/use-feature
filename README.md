@@ -10,7 +10,7 @@
 - [Overrides](#overrides)
 
 ## What is use-feature?
-A comprehensive React feature flag library providing reusable components and hooks along with easy override features so internal, non-technical users can toggle them off with ease without effecting anybody else.
+A comprehensive React feature flag library providing reusable components and hooks along with easy override features so anybody (including non-technical users) can toggle them off with ease without effecting anybody else.
 
 ## Problem
 
@@ -31,6 +31,12 @@ yarn add use-feature
 ```
 
 ## Usage
+
+You can still set your feature flag to `true` or `false` in an environment variable but using the following hook or component allows you to override that value in your browser.
+
+In the following examples, your feature will default to being disabled if no environment variable, override or `enabled` prop is found. 
+
+If you have an environment variable set as `MY_FEATURE=true` that will enable the the feature. Then if you override that environment variable with any of the [override options](#overrides) it will toggle feature flag in your browser.
 
 ### Component
 ```tsx

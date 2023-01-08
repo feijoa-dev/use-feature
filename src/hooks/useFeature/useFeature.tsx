@@ -43,20 +43,20 @@ const useFeature = ({
       process.env?.[`GATSBY_${name}`] ||
       process.env?.[`NEXT_PUBLIC_${name}`]
 
+    if( !isNil(myParam) ) {
+      return getBoolVal(myParam)
+    }
+
     if( !isNil(cookies[name]) ) {
       return getBoolVal(cookies[name])
     }
-
-    if( !isNil(myParam) ) {
-      return getBoolVal(myParam)
+    
+    if( !isNil(localStorageValue) ) {
+      return getBoolVal(localStorageValue)
     }
     
     if( !isNil(envVar) ) {
       return getBoolVal(envVar)
-    }
-
-    if( !isNil(localStorageValue) ) {
-      return getBoolVal(localStorageValue)
     }
 
     return !!enabled
