@@ -19,8 +19,7 @@
     "test:build": "run-s build",
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=true react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "semantic-release": "semantic-release"
+    "test:watch": "react-scripts test --env=jsdom"
   },
   "peerDependencies": {
     "react": ">=16.0.0"
@@ -31,9 +30,7 @@
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^25.1.4",
     "@types/node": "^12.12.38",
-    "@types/object.fromentries": "^2.0.1",
     "@types/react": "^16.9.27",
-    "@types/react-dom": "^16.9.7",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "babel-eslint": "^10.0.3",
@@ -48,15 +45,12 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
-    "inquirer": "^8.2.2",
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-scripts": "^5.0.1",
-    "typescript": "^3.9.10",
-    "semantic-release": "^20.0.0"
+    "typescript": "^3.9.10"
   },
   "files": [
     "dist"
