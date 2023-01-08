@@ -2,15 +2,15 @@
 
 [![NPM](https://img.shields.io/npm/v/use-feature.svg)](https://www.npmjs.com/package/use-feature) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-- [What is Feijoa](#what-is-feijoa)
+- [What is use-feature](#what-is-use-feature)
 - [Problem](#problem)
 - [Install](#install)
 - [Usage](#usage)
 - [Props](#props)
 - [Overrides](#overrides)
 
-## What is Feijoa?
-A comprehensive React feature flag library providing reusable components and hooks along with easy override features so internal, non-technical users can toggle them off with ease without effecting anybody else.
+## What is use-feature?
+A comprehensive React feature flag library providing reusable components and hooks along with easy override features so anybody (including non-technical users) can toggle them off with ease without effecting anybody else.
 
 ## Problem
 
@@ -23,14 +23,20 @@ Now you to don't have to worry about any of this and you can toggle features in 
 ## Install
 
 ```bash
-npm install --save feijoa-react
+npm install --save use-feature
 ```
 or
 ```bash
-yarn add feijoa-react
+yarn add use-feature
 ```
 
 ## Usage
+
+You can still set your feature flag to `true` or `false` in an environment variable but using the following hook or component allows you to override that value in your browser.
+
+In the following examples, your feature will default to being disabled if no environment variable, override or `enabled` prop is found. 
+
+If you have an environment variable set as `MY_FEATURE=true` that will enable the the feature. Then if you override that environment variable with any of the [override options](#overrides) it will toggle feature flag in your browser.
 
 ### Component
 ```tsx
@@ -92,7 +98,7 @@ Sometimes it's useful for some users to be able override feature flags on their 
 
 This can be done either via a query string or via a setting a cookie
 
-*NOTE: query string or cookie keys must match the `name` you pass into the Feijoa component or hook props*
+*NOTE: query string or cookie keys and local storage keys must match the `name` prop*
 
 ### Query string
 
