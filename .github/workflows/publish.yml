@@ -27,9 +27,9 @@ jobs:
         run: npm i --no-save @semantic-release/changelog @semantic-release/git conventional-changelog-conventionalcommits
       
       - name: Create Release
-        run: npx semantic-release@19
+        run: npx semantic-release@19.0.5
         env:
-          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm run build
       - run: npm publish --access public
