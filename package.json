@@ -4,7 +4,7 @@
   "description": "React hook for overriding and consuming feature flags",
   "author": "Stretch Codes Ltd",
   "license": "MIT",
-  "repository": "feijoa-dev/feijoa-react",
+  "repository": "https://github.com/stretch0/use-feature",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
