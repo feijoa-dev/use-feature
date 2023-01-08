@@ -34,8 +34,6 @@ yarn add feijoa-react
 
 ### Component
 ```tsx
-import React, { Component } from 'react'
-
 import { Feature } from "use-feature";
 
 const Example = () => {
@@ -50,8 +48,6 @@ const Example = () => {
 ### Hook
 
 ```tsx
-import React from 'react'
-
 import { useFeature } from "use-feature";
 
 const Example = () => {
@@ -68,8 +64,6 @@ const Example = () => {
 You can use the `enabled` prop to conditionally enable your feature
 
 ```tsx
-import React from 'react'
-
 import { useFeature } from "use-feature";
 
 const Example = () => {

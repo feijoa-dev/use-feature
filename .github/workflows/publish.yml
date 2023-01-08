@@ -22,8 +22,6 @@ jobs:
       - run: npm ci
       - run: npm run test:unit
       - run: npm run build
-      - run: git fetch --tags
-      - run: git push --follow-tags
       
       - name: Install semantic-release plugins
         run: npm i --no-save @semantic-release/changelog @semantic-release/git conventional-changelog-conventionalcommits
