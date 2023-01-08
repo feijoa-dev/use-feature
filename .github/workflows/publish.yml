@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16.x"
+          node-version: "18.x"
           registry-url: 'https://registry.npmjs.org'
 
       - run: npm ci
@@ -27,7 +27,7 @@ jobs:
         run: npm i --no-save @semantic-release/changelog @semantic-release/git conventional-changelog-conventionalcommits
       
       - name: Create Release
-        run: npx semantic-release@19.0.5
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
