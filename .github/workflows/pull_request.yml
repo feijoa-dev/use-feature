@@ -31,7 +31,7 @@ jobs:
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-script: npm run test:unit
+          test-script: npm run test:unit -- --json --outputFile ./report.json
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           REACT_APP_SHOW_FEATURE_1: true
