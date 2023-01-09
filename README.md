@@ -86,10 +86,10 @@ const Example = () => {
 
 ## Props
 
-| Prop            | Type        | Description                                                       | Required | default Value  |
-| ------------    | ----------- | -------------------------------------------------------           | ---------| ---------|
-| `name`          | string      | Name of your feature flag (used for overrides)                    | true     | N/A      |
-| `enabled`       | boolean     | `true` = show, `false` = hide                                     | false    | `false`    |
+| Prop            | Type        | Description                                                                               | Required | default Value  |
+| ------------    | ----------- | -------------------------------------------------------                                   | ---------| ---------|
+| `name`          | string      | Name of your feature flag (used for browser overrides and getting value from env var)     | true     | N/A      |
+| `enabled`       | boolean     | `true` = show, `false` = hide                                                             | false    | `false`    |
 -------------------------
 
 ## Overrides
