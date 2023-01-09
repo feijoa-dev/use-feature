@@ -26,7 +26,13 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - run: npm run test:unit
+      - name: Run Unit Tests
+        if: github.actor != 'dependabot[bot]'
+        uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          base-coverage-file: ./coverage/master/report.json
+          skip-step: install
+        test-script: npm run test:unit
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           REACT_APP_FEIJOA_ENV: production
