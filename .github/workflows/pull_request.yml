@@ -28,7 +28,7 @@ jobs:
       - run: npm ci
       - name: Coverage Report
         if: github.actor != 'dependabot[bot]'
-        uses: ArtiomTr/jest-coverage-report-action@v2
+        uses: artiomtr/jest-coverage-report-action@v2.0.5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           test-script: npm run test:unit --  --json --outputFile ./report.json
