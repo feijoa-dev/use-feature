@@ -33,7 +33,6 @@ jobs:
         if: github.actor != 'dependabot[bot]'
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
-          base-coverage-file: ./coverage/master/report.json
           skip-step: install
           test-script: npm run test:unit
         env:
