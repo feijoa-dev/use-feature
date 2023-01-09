@@ -10,7 +10,7 @@
 - [Overrides](#overrides)
 
 ## What is use-feature?
-A comprehensive React feature flag library providing reusable components and hooks along with easy override features so anybody (including non-technical users) can toggle them off with ease without effecting anybody else.
+A comprehensive React feature flag library providing reusable components and hooks along with the ability to easily override flags so anybody (including non-technical users) can toggle features in their own browser.
 
 ## Problem
 
@@ -86,10 +86,10 @@ const Example = () => {
 
 ## Props
 
-| Prop            | Type        | Description                                                       | Required | default Value  |
-| ------------    | ----------- | -------------------------------------------------------           | ---------| ---------|
-| `name`          | string      | Name of your feature flag (used for overrides)                    | true     | N/A      |
-| `enabled`       | boolean     | `true` = show, `false` = hide                                     | false    | `false`    |
+| Prop            | Type        | Description                                                                     | Required | default Value  |
+| ------------    | ----------- | -------------------------------------------------------                         | ---------| ---------|
+| `name`          | string      | Name of your feature flag (used for overrides and for checking env var value)   | true     | N/A      |
+| `enabled`       | boolean     | `true` = show, `false` = hide                                                   | false    | `false`    |
 -------------------------
 
 ## Overrides
@@ -114,10 +114,10 @@ This can be done either via a query string or via a setting a cookie
 
 ```js
 // enable
-localStorage.setItem('flag_enabled', 'true');
+localStorage.setItem('MY_FEATURE', 'true');
 
 // disable
-localStorage.setItem('flag_enabled', 'false');
+localStorage.setItem('MY_FEATURE', 'false');
 ```
 
 ### Cookie
