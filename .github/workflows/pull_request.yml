@@ -27,7 +27,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
 
-      - run: npm run test:unit -- --json --outputFile ./report.json
+      - run: npm run test:unit
         env:
           REACT_APP_SHOW_FEATURE_1: true
           GATSBY_FEATURE_3: true
@@ -36,8 +36,6 @@ jobs:
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
-        with:
-          files: ./report.json
         
       - run: npm run build
       - run: npm publish --access public --dry-run
