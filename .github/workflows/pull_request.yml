@@ -33,7 +33,7 @@ jobs:
           GATSBY_FEATURE_3: true
           OTHER_FEATURE_1: true
           REACT_APP_SHOW_FEATURE_2: false
-      - name: Run Unit Tests
+      - name: Coverage Report
         if: github.actor != 'dependabot[bot]'
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
