@@ -1,6 +1,6 @@
 # use-feature
 
-[![NPM](https://img.shields.io/npm/v/use-feature.svg)](https://www.npmjs.com/package/use-feature) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)[![NPM](https://img.shields.io/appveyor/tests/feijoa-dev/use-feature)](https://www.npmjs.com/package/use-feature)
+[![NPM](https://img.shields.io/npm/v/use-feature.svg)](https://www.npmjs.com/package/use-feature) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 - [What is use-feature](#what-is-use-feature)
 - [Problem](#problem)
