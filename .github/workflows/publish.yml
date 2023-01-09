@@ -23,7 +23,14 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - run: npm ci
-      - run: npm run test:unit
+      
+      - run: npm run test:unit -- --json --outputFile ./report.json
+        env:
+          REACT_APP_SHOW_FEATURE_1: true
+          GATSBY_FEATURE_3: true
+          OTHER_FEATURE_1: true
+          REACT_APP_SHOW_FEATURE_2: false
+          
       - run: npm run build
       
       - name: Install semantic-release plugins
