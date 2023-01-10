@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/feijoa-dev/use-feature/compare/v1.1.1...v1.1.2) (2023-01-10)
+
+
+### Bug Fixes
+
+* Added coverage badge and increased test coverage ([80f481f](https://github.com/feijoa-dev/use-feature/commit/80f481fa758c8bfe7344c7199e052e117e2ed6de))
+
 ## [1.1.1](https://github.com/feijoa-dev/use-feature/compare/v1.1.0...v1.1.1) (2023-01-08)
 
 
