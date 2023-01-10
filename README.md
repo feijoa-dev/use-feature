@@ -1,6 +1,6 @@
 # use-feature
 
-[![NPM](https://img.shields.io/npm/v/use-feature.svg)](https://www.npmjs.com/package/use-feature) [![codecov](https://codecov.io/gh/feijoa-dev/use-feature/branch/main/graph/badge.svg?token=ABVLM7PCDG)](https://codecov.io/gh/feijoa-dev/use-feature)
+[![NPM](https://img.shields.io/npm/v/use-feature.svg)](https://www.npmjs.com/package/use-feature) [![codecov](https://codecov.io/gh/feijoa-dev/use-feature/branch/main/graph/badge.svg?token=ABVLM7PCDG)](https://codecov.io/gh/feijoa-dev/use-feature)![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/feijoa-dev/use-feature/publish.yml)
 
 - [What is use-feature](#what-is-use-feature)
 - [Problem](#problem)
