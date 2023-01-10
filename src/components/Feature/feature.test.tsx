@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom'
+import { isNil, getBoolVal } from "../../hooks/useFeature/useFeature.utils";
 import Feature from '.'
 
 describe('Feature Component', () => {
@@ -103,5 +104,41 @@ describe('Feature Component', () => {
       )
       expect(queryByText("My Feature")).toBeTruthy()
     })
+  })
+})
+
+describe('isNil', () => {
+
+  it('Should return true when value is null', () => {
+    const result = isNil(null)
+    expect(result).toBeTruthy()
+  })
+
+  it('Should return true when value is undefined', () => {
+    const result = isNil(undefined)
+    expect(result).toBeTruthy()
+  })
+
+  it('Should return false when value is empty string', () => {
+    const result = isNil("")
+    expect(result).toBeFalsy()
+  })
+})
+
+describe('getBoolVal', () => {
+
+  it('Should return true when value is "true"', () => {
+    const result = getBoolVal("true")
+    expect(result).toBeTruthy()
+  })
+
+  it('Should return true when value is true', () => {
+    const result = getBoolVal(true)
+    expect(result).toBeTruthy()
+  })
+
+  it('Should return false when value is false', () => {
+    const result = getBoolVal(false)
+    expect(result).toBeFalsy()
   })
 })
