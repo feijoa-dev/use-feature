@@ -1,16 +1,6 @@
 import { useMemo } from "react"
 import { FeatureProps } from "../../types/Feature.types";
-
-const isNil = (val: any): boolean => val === undefined || val === null;
-
-const getBoolVal = (val?: string|boolean|null): boolean => {
-
-  if( typeof val === "string" ) {
-    return val === "true";
-  }
-
-  return !!val;
-}
+import { isNil, getBoolVal } from "./useFeature.utils";
 
 const useFeature = ({ 
   name,
