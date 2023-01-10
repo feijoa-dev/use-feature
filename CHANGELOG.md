@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/feijoa-dev/use-feature/compare/v1.1.2...v1.1.3) (2023-01-10)
+
+
+### Bug Fixes
+
+* added build badge ([76a7875](https://github.com/feijoa-dev/use-feature/commit/76a787564db233e335a4966bdc9b4d4591f69960))
+* added space ([f18c5cf](https://github.com/feijoa-dev/use-feature/commit/f18c5cf901a95d2bc285fb3c6d2f4030a3fd2ced))
+
 ## [1.1.2](https://github.com/feijoa-dev/use-feature/compare/v1.1.1...v1.1.2) (2023-01-10)
 
 
