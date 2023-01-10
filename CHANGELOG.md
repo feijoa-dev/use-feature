@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/feijoa-dev/use-feature/compare/v1.1.4...v1.2.0) (2023-01-10)
+
+
+### Features
+
+* Upgraded dev dependencies and added dependabot ([2170c79](https://github.com/feijoa-dev/use-feature/commit/2170c79ce0506e68b01bd88ed07d404fffb4fa92))
+
 ## [1.1.4](https://github.com/feijoa-dev/use-feature/compare/v1.1.3...v1.1.4) (2023-01-10)
 
 
