@@ -1,3 +1,11 @@
+## [1.1.4](https://github.com/feijoa-dev/use-feature/compare/v1.1.3...v1.1.4) (2023-01-10)
+
+
+### Bug Fixes
+
+* removed unused config files ([f3d36bc](https://github.com/feijoa-dev/use-feature/commit/f3d36bc701ae05f0ab95ec11b4c5a5427f2c3870))
+* Updated linting and added TS badge ([e5f0244](https://github.com/feijoa-dev/use-feature/commit/e5f024472017aa315d9116b17c2172879d39c07f))
+
 ## [1.1.3](https://github.com/feijoa-dev/use-feature/compare/v1.1.2...v1.1.3) (2023-01-10)
 
 
