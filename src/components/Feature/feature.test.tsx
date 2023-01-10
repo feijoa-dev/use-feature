@@ -25,7 +25,7 @@ describe('Feature Component', () => {
     it('Should NOT render feature when enabled value is false', () => {
 
       const { queryByText } = render(
-        <Feature name="my-feature" enabled={false}>
+        <Feature name="my-feature">
           <p>My Feature</p>
         </Feature>
       )
@@ -103,6 +103,99 @@ describe('Feature Component', () => {
         </Feature>
       )
       expect(queryByText("My Feature")).toBeTruthy()
+    })
+
+    it('Should render feature when cookie value is true', () => {
+
+      document.cookie = 'COOKIE_FEATURE=true;'
+
+      const { queryByText } = render(
+        <Feature name="COOKIE_FEATURE">
+          <p>My Feature</p>
+        </Feature>
+      )
+      expect(queryByText("My Feature")).toBeTruthy()
+    })
+
+    it('Should NOT render feature when cookie value is false', () => {
+
+      document.cookie = 'COOKIE_FEATURE=false;'
+
+      const { queryByText } = render(
+        <Feature name="COOKIE_FEATURE">
+          <p>My Feature</p>
+        </Feature>
+      )
+      expect(queryByText("My Feature")).toBeFalsy()
+    })
+
+    it('Should NOT render feature when cookie value is not set', () => {
+
+      document.cookie = 'COOKIE_FEATURE=; Max-Age=0; path=/; domain=' + location.host;
+
+      const { queryByText } = render(
+        <Feature name="COOKIE_FEATURE">
+          <p>My Feature</p>
+        </Feature>
+      )
+      expect(queryByText("My Feature")).toBeFalsy()
+    })
+
+    it('Should render feature when query param value is true', () => {
+
+      const location = {
+        ...window.location,
+        search: '?PARAM_FEATURE=true',
+      };
+      Object.defineProperty(window, 'location', {
+        writable: true,
+        value: location,
+      })
+
+      const { queryByText } = render(
+        <Feature name="PARAM_FEATURE">
+          <p>My Feature</p>
+        </Feature>
+      )
+      expect(queryByText("My Feature")).toBeTruthy()
+    })
+
+    it('Should render feature when query param value is false', () => {
+
+      const location = {
+        ...window.location,
+        search: '?PARAM_FEATURE=false',
+      };
+      Object.defineProperty(window, 'location', {
+        writable: true,
+        value: location,
+      })
+
+      const { queryByText } = render(
+        <Feature name="PARAM_FEATURE">
+          <p>My Feature</p>
+        </Feature>
+      )
+      expect(queryByText("My Feature")).toBeFalsy()
+    })
+
+    it('Should render feature when query param value is not provided', () => {
+
+      const location = {
+        ...window.location,
+        search: '',
+      };
+      Object.defineProperty(window, 'location', {
+        writable: true,
+        value: location,
+      })
+
+      const { queryByText } = render(
+        <Feature name="PARAM_FEATURE">
+          <p>My Feature</p>
+        </Feature>
+      )
+      expect(queryByText("My Feature")).toBeFalsy()
     })
   })
 })
