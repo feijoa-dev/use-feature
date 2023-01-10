@@ -26,18 +26,16 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - name: Coverage Report
-        if: github.actor != 'dependabot[bot]'
-        uses: ArtiomTr/jest-coverage-report-action@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-script: npm run test:unit -- --json --outputFile ./report.json
+
+      - run: npm run test:unit
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           REACT_APP_SHOW_FEATURE_1: true
           GATSBY_FEATURE_3: true
           OTHER_FEATURE_1: true
           REACT_APP_SHOW_FEATURE_2: false
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
         
       - run: npm run build
       - run: npm publish --access public --dry-run
