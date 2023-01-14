@@ -8,7 +8,9 @@ updates:
   - package-ecosystem: 'npm' # See documentation for possible values
     directory: '/' # Location of package manifests
     schedule:
-      interval: 'weekly'
+      interval: 'daily'
+    commit-message:
+      prefix: "fix: "
     ignore:
       - dependency-name: '*'
         # Ignore major (breaking changes) and minor (feature) updates
