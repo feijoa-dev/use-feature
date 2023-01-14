@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/feijoa-dev/use-feature/compare/v1.2.1...v1.2.2) (2023-01-14)
+
+
+### Bug Fixes
+
+* Updated PR workflow trigger ([4befb24](https://github.com/feijoa-dev/use-feature/commit/4befb244372bd19b08766f9cafdfa309ae6f9213))
+
 ## [1.2.1](https://github.com/feijoa-dev/use-feature/compare/v1.2.0...v1.2.1) (2023-01-14)
 
 
