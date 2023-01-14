@@ -41,7 +41,6 @@ jobs:
       
       - name: Create Release
         run: npx semantic-release
-        if: github.actor != 'dependabot[bot]'
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GH_TOKEN }}
 

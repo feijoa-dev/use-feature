@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/feijoa-dev/use-feature/compare/v1.2.0...v1.2.1) (2023-01-14)
+
+
+### Bug Fixes
+
+* updated dependabot to publish release ([eebe2f9](https://github.com/feijoa-dev/use-feature/commit/eebe2f9ee2df8b2d54051bd719e724e79082491c))
+* updated dependabot to publish release ([f21a9a3](https://github.com/feijoa-dev/use-feature/commit/f21a9a3de1cadf796d2943916bb65f0d0b8834df))
+
 # [1.2.0](https://github.com/feijoa-dev/use-feature/compare/v1.1.4...v1.2.0) (2023-01-10)
 
 
