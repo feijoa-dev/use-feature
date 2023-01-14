@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/feijoa-dev/use-feature/compare/v1.2.2...v1.2.3) (2023-01-14)
+
+
+### Bug Fixes
+
+* bump eslint-plugin-n from 15.6.0 to 15.6.1 ([f9c3d73](https://github.com/feijoa-dev/use-feature/commit/f9c3d732d32de3c4ab1899fe5a7493a2d85bd147))
+
 ## [1.2.2](https://github.com/feijoa-dev/use-feature/compare/v1.2.1...v1.2.2) (2023-01-14)
 
 
