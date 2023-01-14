@@ -1,6 +1,6 @@
 {
   "name": "use-feature",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "React hook for overriding and consuming feature flags",
   "author": "Stretch Codes Ltd",
   "license": "MIT",

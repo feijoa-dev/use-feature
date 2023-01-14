@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/feijoa-dev/use-feature/compare/v1.2.3...v1.2.4) (2023-01-14)
+
+
+### Bug Fixes
+
+* bump prettier from 2.8.2 to 2.8.3 ([aacae2b](https://github.com/feijoa-dev/use-feature/commit/aacae2b29b63096d0068d129902ad5ee3e30f010))
+
 ## [1.2.3](https://github.com/feijoa-dev/use-feature/compare/v1.2.2...v1.2.3) (2023-01-14)
 
 
