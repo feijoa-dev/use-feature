@@ -1,3 +1,12 @@
+## [1.2.5](https://github.com/feijoa-dev/use-feature/compare/v1.2.4...v1.2.5) (2023-01-17)
+
+
+### Bug Fixes
+
+* bump @typescript-eslint/eslint-plugin from 5.48.1 to 5.48.2 ([376e059](https://github.com/feijoa-dev/use-feature/commit/376e059ed0424017855859574e5a0556215c9157))
+* bump @typescript-eslint/parser from 5.48.1 to 5.48.2 ([aa8a77d](https://github.com/feijoa-dev/use-feature/commit/aa8a77df867ab7ef883964e7f9518a1e62d8df12))
+* updated publish checkout personal access token ([119b80a](https://github.com/feijoa-dev/use-feature/commit/119b80a7493a9b98f4bd1ddefac86b9ac917e33f))
+
 ## [1.2.4](https://github.com/feijoa-dev/use-feature/compare/v1.2.3...v1.2.4) (2023-01-14)
 
 
