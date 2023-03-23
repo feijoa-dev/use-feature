@@ -1,3 +1,18 @@
+## [1.2.6](https://github.com/feijoa-dev/use-feature/compare/v1.2.5...v1.2.6) (2023-03-23)
+
+
+### Bug Fixes
+
+* bump ([f826fb4](https://github.com/feijoa-dev/use-feature/commit/f826fb48eae376116de4072cd4d33c2145c8709c))
+* bump @types/jest from 29.2.5 to 29.2.6 ([67f599f](https://github.com/feijoa-dev/use-feature/commit/67f599fbbfa15e211c6b8fc66967f2543daf0327))
+* bump @types/node from 18.11.18 to 18.11.19 ([9f78c0b](https://github.com/feijoa-dev/use-feature/commit/9f78c0b048b1fa65bdfeb4104f02678ac6058714))
+* bump @types/react from 18.0.26 to 18.0.27 ([ca26070](https://github.com/feijoa-dev/use-feature/commit/ca26070f604037653be29d456f77dce5adb6631c))
+* bump @types/react from 18.0.27 to 18.0.28 ([17e3a98](https://github.com/feijoa-dev/use-feature/commit/17e3a98f76f40932452cb1d2b6eb6d72c4eec27b))
+* bump prettier from 2.8.3 to 2.8.4 ([b32c8b1](https://github.com/feijoa-dev/use-feature/commit/b32c8b19537071adb5e4c9e3d95a84ee28fca8f7))
+* bump prettier from 2.8.4 to 2.8.5 ([b676a04](https://github.com/feijoa-dev/use-feature/commit/b676a0469997edef02cc62dfa8a8da0c1912617b))
+* bump prettier from 2.8.5 to 2.8.6 ([398b15b](https://github.com/feijoa-dev/use-feature/commit/398b15b5a04c51f765cf08fba0e12bc1a8313853))
+* bump typescript from 4.9.4 to 4.9.5 ([0d2b250](https://github.com/feijoa-dev/use-feature/commit/0d2b250cf02ab777b9f2e6eea9c559273e630434))
+
 ## [1.2.5](https://github.com/feijoa-dev/use-feature/compare/v1.2.4...v1.2.5) (2023-01-17)
 
 
