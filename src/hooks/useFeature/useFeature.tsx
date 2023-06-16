@@ -29,7 +29,8 @@ const useFeature = ({
       process.env?.[name] ||
       process.env?.[`REACT_APP_${name}`] ||
       process.env?.[`GATSBY_${name}`] ||
-      process.env?.[`NEXT_PUBLIC_${name}`]
+      process.env?.[`NEXT_PUBLIC_${name}`] ||
+      process.env?.[`VITE_${name}`]
 
     if (!isNil(myParam)) {
       return getBoolVal(myParam)
