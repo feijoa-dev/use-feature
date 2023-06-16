@@ -1,3 +1,21 @@
+## [1.2.7](https://github.com/feijoa-dev/use-feature/compare/v1.2.6...v1.2.7) (2023-06-16)
+
+
+### Bug Fixes
+
+* Added check for vite env var prefix ([68b01de](https://github.com/feijoa-dev/use-feature/commit/68b01de8df020c2dc09ba5ed7a18fd74e8da73b9))
+* bump @types/react from 18.0.28 to 18.0.29 ([1c204d0](https://github.com/feijoa-dev/use-feature/commit/1c204d0ced57e06fca7cf568ebb217f4263502a9))
+* bump @types/react from 18.0.29 to 18.0.30 ([d97554b](https://github.com/feijoa-dev/use-feature/commit/d97554b5b3cbbd020e1aefda6c936b7724710dc5))
+* bump @types/react from 18.0.30 to 18.0.31 ([8c37f74](https://github.com/feijoa-dev/use-feature/commit/8c37f74da3e70fe7d58b74a728c5fa49b8f53f20))
+* bump @types/react from 18.0.31 to 18.0.32 ([8ebc392](https://github.com/feijoa-dev/use-feature/commit/8ebc39273208012ffbd5bb2fd9b173d451d10232))
+* bump @types/react from 18.0.32 to 18.0.33 ([df81a36](https://github.com/feijoa-dev/use-feature/commit/df81a3666b3ec2ddc8db0434bbc4e6e8dd8cd17a))
+* bump @types/react from 18.0.33 to 18.0.34 ([640f707](https://github.com/feijoa-dev/use-feature/commit/640f70718f9ead49e517f89553f7e461e849e03f))
+* bump @types/react from 18.0.34 to 18.0.35 ([9b3ab0e](https://github.com/feijoa-dev/use-feature/commit/9b3ab0e64fc8d2899b1e4fcfd72e4251471770c0))
+* bump @types/react from 18.0.35 to 18.0.37 ([85cb0cf](https://github.com/feijoa-dev/use-feature/commit/85cb0cf4fe2b921449d316da95de7b4c23a45462))
+* bump @types/react from 18.0.37 to 18.0.38 ([6127b0b](https://github.com/feijoa-dev/use-feature/commit/6127b0b1cffd4ddb2458f0e05ba1e3002222b825))
+* bump prettier from 2.8.6 to 2.8.7 ([734c74f](https://github.com/feijoa-dev/use-feature/commit/734c74fd95e43229d30896b73b1efeb2971f82c5))
+* bump prettier from 2.8.7 to 2.8.8 ([f411944](https://github.com/feijoa-dev/use-feature/commit/f411944c744ba8775f2b21e8fde9e2f5081d4a4b))
+
 ## [1.2.6](https://github.com/feijoa-dev/use-feature/compare/v1.2.5...v1.2.6) (2023-03-23)
 
 
