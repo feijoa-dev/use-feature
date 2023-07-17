@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/feijoa-dev/use-feature/compare/v1.2.7...v2.0.0) (2023-07-17)
+
+
+* Merge pull request #47 from feijoa-dev/simplify-api ([8a52ff1](https://github.com/feijoa-dev/use-feature/commit/8a52ff10e0d2defa918d0a4aed025a946f97bc34)), closes [#47](https://github.com/feijoa-dev/use-feature/issues/47)
+
+
+### BREAKING CHANGES
+
+* Updated hook to have more simplified params
+
 ## [1.2.7](https://github.com/feijoa-dev/use-feature/compare/v1.2.6...v1.2.7) (2023-06-16)
 
 
