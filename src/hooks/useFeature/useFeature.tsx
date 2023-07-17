@@ -1,11 +1,7 @@
 import { useMemo } from 'react'
-import { FeatureProps } from '../../types/Feature.types'
 import { isNil, getBoolVal } from './useFeature.utils'
 
-const useFeature = ({
-  name,
-  enabled = false
-}: FeatureProps): boolean => {
+const useFeature = (name: string, enabled = false): boolean => {
   const cookies = useMemo(() => {
     if (!global.window) {
       return {}
