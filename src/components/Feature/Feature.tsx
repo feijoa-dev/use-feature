@@ -10,10 +10,7 @@ const Feature = ({
   enabled = false,
   children
 }: PropsWithChildren<FeatureProps>) => {
-  const flagEnabled = useFeature({
-    name,
-    enabled
-  })
+  const flagEnabled = useFeature(name, enabled)
 
   return (
     <Fragment>
