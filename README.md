@@ -10,20 +10,12 @@
 - [Overrides](#overrides)
 
 ## What is use-feature?
-A comprehensive React feature flag library providing reusable components and hooks along with the ability to easily override flags so anybody (including non-technical users) can toggle features in their own browser.
-
-## Problem
-
-It can be finicky managing feature flags across multiple environments and is only exacerbated when you need to enable a feature for one user or for a one off i.e. a QA who needs to test or when you want demo a feature for review. 
-
-Normally this would require toggling a feature flag in an environment variable and re-running a build. This can take time depending on your CI or maybe you have to do a release to get the changes deployed.
-
-Now you to don't have to worry about any of this and you can toggle features in your browser, without any code deploys! Simply override a feature flag with a query param, cookie or local storage. They can even be overridden with env variables if you want certain builds to not have a feature.
+A comprehensive, lightweight, feature flag hook for React. It provides an easy way to read and override flags so anybody (including non-technical users) can toggle features in their own browser.
 
 ## Install
 
 ```bash
-npm install --save use-feature
+npm install use-feature
 ```
 or
 ```bash
@@ -31,14 +23,24 @@ yarn add use-feature
 ```
 
 ## Usage
+### Hook
 
-You can still set your feature flag to `true` or `false` in an environment variable but using the following hook or component allows you to override that value in your browser.
+To use the `useFeature` hook:
 
-In the following examples, your feature will default to being disabled if no environment variable, override or `enabled` prop is found. 
+```tsx
+import { useFeature } from "use-feature";
 
-If you have an environment variable set as `MY_FEATURE=true` that will enable the the feature. Then if you override that environment variable with any of the [override options](#overrides) it will toggle feature flag in your browser.
+const Example = () => {
+  const showFeature = useFeature("MY_FEATURE"); // either pass a boolean as a second value or set an environment variable `MY_FEATURE=true`
+
+  return (
+    showFeature ? <MyFeature /> : null
+  );
+}
+```
 
 ### Component
+To use the `Feature` component:
 ```tsx
 import { Feature } from "use-feature";
 
@@ -51,39 +53,6 @@ const Example = () => {
 }
 ```
 
-### Hook
-
-```tsx
-import { useFeature } from "use-feature";
-
-const Example = () => {
-  const showFeature = useFeature({
-    name: "MY_FEATURE"
-  });
-
-  return (
-    showFeature ? <MyFeature /> : null
-  );
-}
-```
-
-You can use the `enabled` prop to conditionally enable your feature
-
-```tsx
-import { useFeature } from "use-feature";
-
-const Example = () => {
-  const showFeature = useFeature({
-    name: "MY_OTHER_FEATURE",
-    enabled: true
-  });
-
-  return (
-    showFeature ? <MyFeature /> : null
-  );
-}
-```
-
 ## Props
 
 | Prop            | Type        | Description                                                                     | Required | default Value  |
@@ -92,11 +61,18 @@ const Example = () => {
 | `enabled`       | boolean     | `true` = show, `false` = hide                                                   | false    | `false`    |
 -------------------------
 
+**Note**: The feature flag is defaulted to false, but using any of the following methods, it will toggle the flag:
+
+1) Setting a true/false value as the second argument to the useFeature hook.
+2) Looking for an environment variable, query string, local storage, or cookie with the same name as the feature flag.
+
+---
+
 ## Overrides
 
 Sometimes it's useful for some users to be able override feature flags on their local browser. This is particularly useful if you want a feature disabled for the public but need to enable it for a one person to test. E.g. for the QA tester or a product owner etc.
 
-This can be done either via a query string or via a setting a cookie
+This can be done either via a query string, local storage value, or setting a cookie.
 
 *NOTE: query string or cookie keys and local storage keys must match the `name` prop*
 
