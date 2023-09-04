@@ -106,7 +106,8 @@ document.cookie = 'MY_FEATURE=true;'
 document.cookie = 'MY_FEATURE=false;'
 ```
 
-Environment Variables
+### Environment Variables
+
 ```sh 
 #.env
 MY_FEATURE=true
